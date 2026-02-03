@@ -4,22 +4,22 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(244, 216, 146);
   text-align: center;
-  color: navy;
+  color: rgb(128, 55, 0);
   margin: auto;
   font-family: water;
 }
 
 h1{
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #myCanvas {
-  background-image: url("https://seaviewinfo.com/wp-content/uploads/2018/07/SeaScape.jpg");
+  background-image: url("https://design-milk.com/images/2024/07/Meow-Parlour-NYC-Cat-Cafe-Lounge-1.jpg");
   background-size: 600px 400px;
   border-radius: 300px;
-  border: 5px solid white;
+  border: 5px solid rgb(128, 55, 0);
 }
 
 
