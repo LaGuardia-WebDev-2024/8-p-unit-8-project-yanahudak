@@ -3,8 +3,7 @@ setup = function() {
     size(600, 400);
     background(255,255,255,0);
     
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+   
 };
 
 //🟢draw Function - will run on repeat
@@ -24,10 +23,10 @@ mouseClicked = function(){
 }
 
 //🟡drawPaw Function - will run when called
-var drawPaw = function(PawX, PawY){
-  varpawSize = random(2, 12);
+var drawPaw = function(pawX, pawY){
+  var pawSize = (20, 30);
   var pawX = mouseX + random (-12,12);
-  var PawY = mouseY + random (-12,12);
+  var pawY = mouseY + random (-12,12);
   textSize(pawSize);
   text("🐾", pawX, pawY);
 };
