@@ -14,12 +14,22 @@ draw = function(){
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
+  var myText = "x: " + mouseX + "\ny: " + mouseY;
+  console.log(myText);
+
+  drawPaw();
+  drawPaw();
+  drawPaw();
 
 }
 
-//🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
-  
+//🟡drawPaw Function - will run when called
+var drawPaw = function(PawX, PawY){
+  varpawSize = random(2, 12);
+  var pawX = mouseX + random (-12,12);
+  var PawY = mouseY + random (-12,12);
+  textSize(pawSize);
+  text("🐾", pawX, pawY);
 };
 
 
