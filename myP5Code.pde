@@ -17,8 +17,6 @@ mouseClicked = function(){
   console.log(myText);
 
   drawPaw();
-  drawPaw();
-  drawPaw();
 
 }
 
@@ -28,9 +26,12 @@ var drawPaw = function(pawX, pawY){
   var pawX = mouseX + random (-12,12);
   var pawY = mouseY + random (-12,12);
   textSize(pawSize);
-  text("🐾", pawX, pawY);
+  text("🐾", pawX, pawY); // paws
 };
 
+//drawCat Function - will run when called
+var drawCat = function(catX, catY){
 
+}
 
 
