@@ -9,6 +9,8 @@ setup = function() {
 //🟢draw Function - will run on repeat
 draw = function(){
 
+  drawCat(20, 30);
+
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked
@@ -31,7 +33,11 @@ var drawPaw = function(pawX, pawY){
 
 //drawCat Function - will run when called
 var drawCat = function(catX, catY){
-
-}
+  var catSize = (20, 30);
+  var catX = mouseX + random (-12,12);
+  var catY = mouseY + random (-12,12);
+  textSize(catSize);
+  text("🐈", catX, catY); // cats
+};
 
 
