@@ -26,6 +26,8 @@ mouseClicked = function(){
 
   drawPaw();
 
+  drawFish();
+
 
 }
 
@@ -48,12 +50,12 @@ var drawCat = function(catX, catY){
 };
 
 //drawFish Function - will run when called
-var drawFish = function(){
+var drawFish = function(fishX, fishY){
   var fishSize = (20, 30);
   var fishX = mouseX;
   var fishY = mouseY;
   textSize(fishSize);
-  text("🐟", fishX, fishY);
+  text("🐟", fishX, fishY); //fish
 };
 
 
