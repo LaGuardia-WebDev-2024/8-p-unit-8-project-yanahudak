@@ -11,7 +11,7 @@ var catMove = 0; //track movement
 //🟢draw Function - will run on repeat
 draw = function(){
 
-drawCat();
+drawCat(mouseX, mouseY);
 
 if(mousePressed){
   text("meow", random(0,600), random (0,400));
@@ -24,9 +24,9 @@ mouseClicked = function(){
   var myText = "x: " + mouseX + "\ny: " + mouseY;
   console.log(myText);
 
-  drawPaw();
+  drawPaw(mouseX, mouseY);
 
-  drawFish();
+  drawFish(mouseX, mouseY);
 
 
 }
@@ -34,8 +34,6 @@ mouseClicked = function(){
 //🟡drawPaw Function - will run when called
 var drawPaw = function(pawX, pawY){
   var pawSize = (20, 30);
-  var pawX = mouseX + random (-12,12);
-  var pawY = mouseY + random (-12,12);
   textSize(pawSize);
   text("🐾", pawX, pawY); // paws
 };
@@ -43,8 +41,6 @@ var drawPaw = function(pawX, pawY){
 //drawCat Function - will run when called
 var drawCat = function(catX, catY){
   var catSize = (20, 30);
-  var catX = mouseX;
-  var catY = mouseY;
   textSize(catSize);
   text("🐈", catX, catY); // cats
 };
@@ -52,8 +48,6 @@ var drawCat = function(catX, catY){
 //drawFish Function - will run when called
 var drawFish = function(fishX, fishY){
   var fishSize = (20, 30);
-  var fishX = mouseX;
-  var fishY = mouseY;
   textSize(fishSize);
   text("🐟", fishX, fishY); //fish
 };
